@@ -28,8 +28,8 @@ public class Test1 {
 //            System.out.print(num + " ");
 //
 //        }
-            System.out.println("The Sorted Array : ");
-            System.out.println(Arrays.toString(arr));
+//            System.out.println("The Sorted Array : ");
+            System.out.println("The Sorted Array : \t"+Arrays.toString(arr));
         }
 
     }
