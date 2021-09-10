@@ -4,6 +4,7 @@ public class Test1 {
 
     public static void main(String[] args){
         int[] arr;
+        boolean errFlag = false;
         Scanner sc = new Scanner(System.in);
         arr = new int[5];
         try{
@@ -13,15 +14,23 @@ public class Test1 {
         }
         catch(Exception e){
 //            System.out.println(e);
+            errFlag = true;
             System.out.println("Please enter a valid Input [Integer Expected]");
         }
 
-        Arrays.sort(arr);
+        if(errFlag){
+            System.out.println("Something went wrong...");
+        }
+        else{
+            Arrays.sort(arr);
 
 //        for(int num : arr){
 //            System.out.print(num + " ");
 //
 //        }
-        System.out.println(Arrays.toString(arr));
+            System.out.println("The Sorted Array : ");
+            System.out.println(Arrays.toString(arr));
+        }
+
     }
 }
