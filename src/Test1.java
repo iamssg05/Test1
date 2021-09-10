@@ -4,10 +4,17 @@ public class Test1 {
 
     public static void main(String[] args){
         int[] arr;
-        boolean errFlag = false;
-        Scanner sc = new Scanner(System.in);
         arr = new int[5];
+
+        //Boolean Flag to check if everything went well
+        boolean errFlag = false;
+
+        //Scanner object to read from command line
+        Scanner sc = new Scanner(System.in);
+
+        //Try Catch block to catch input type error
         try{
+            //Taking input in array
             for(int num=0; num < arr.length; num++){
                 arr[num] = sc.nextInt();
             }
